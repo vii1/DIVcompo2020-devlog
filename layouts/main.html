@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-</head>
-<body>
-  <header>
-    <p>
-      <a href="/">Home</a>
-    </p>
-  </header>
+{{>header}}
   <h1>{{ title }}</h1>
   <p>{{ description }}</p>
 
@@ -25,9 +13,4 @@
     {{/each}}
     </ul>
     
-  <footer>
-    <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
-  </footer>
-
-</body>
-</html>
+{{>footer}}
