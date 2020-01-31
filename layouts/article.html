@@ -1,11 +1,17 @@
 {{>header}}
   <header>
-    <p>
-      <a href="/">Volver al inicio</a>
-    </p>
-
+    <a class="back-to-index" href="/">&larr; Volver al inicio</a>
   </header>
   <h1>{{ title }}</h1>
   <time>{{ date }}</time>
   {{{ contents }}}
+  <div class="prevnext">
+  {{#if previous}}
+    <a href="{{previous.path}}">Anterior: {{previous.title}}</a>
+  {{/if}}
+  {{#if next}}
+    <a href="{{next.path}}">Siguiente: {{next.title}}</a>
+  {{/if}}
+  </div>
+  
 {{>footer}}
