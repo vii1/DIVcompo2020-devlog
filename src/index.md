@@ -1,13 +1,14 @@
 ---
-layout: layout.html
+layout: main.html
 ---
 
 <h2>Read what I have to say</h2>
 
-<a href="/posts/first-post/">First post</a>
-
-<a href="/posts/second-post/">Second post</a>
-
-<a href="/posts/third-post/">Third post</a>
-
-<a href="/posts/fourth-post/">Fourth post</a>
+  <ul class="recent">
+    {{#each articles }}
+      <li>
+        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+        <div class="date">{{ date }}</div>
+      </li>
+    {{/each}}
+    </ul>
