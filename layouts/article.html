@@ -6,11 +6,11 @@
   <time>{{ date }}</time>
   {{{ contents }}}
   <div class="prevnext">
-  {{#if previous}}
-    <a href="{{previous.path}}">Anterior: {{previous.title}}</a>
-  {{/if}}
   {{#if next}}
-    <a href="{{next.path}}">Siguiente: {{next.title}}</a>
+    <a href="{{next.path}}">Anterior: {{next.title}}</a>
+  {{/if}}
+  {{#if previous}}
+    <a href="{{previous.path}}">Siguiente: {{previous.title}}</a>
   {{/if}}
   </div>
   
