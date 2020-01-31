@@ -22,7 +22,10 @@ Metalsmith(__dirname)
     },
   }))
   .use(markdown())
-  .use(permalinks())
+  .use(permalinks({
+    pattern: ':title',
+    relative: false,
+  }))
   .use(
     layouts({
       engine: 'handlebars',
