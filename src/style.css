@@ -1,0 +1,33 @@
+body {
+    background-color: #CCD;
+    max-width: 50em;
+    margin: auto;      
+    font-family: 'Mukta', sans-serif;
+}
+h1,h2,h3 {
+    font-family: 'Suez One', serif;
+    background-color: #BBC;
+    padding: .1em .3em;
+    margin-bottom: .5em;
+}
+h1 {
+    text-align: center;
+}
+#desc {
+    text-align: center;
+    background-color: #BBC;
+    font-weight: bold;
+    font-style: italic;
+}
+article {
+    border-bottom: 1em solid #BBC;
+}
+time,.time {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: smaller;
+}
+footer {
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    border-top: 1px solid #999;
+}

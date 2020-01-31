@@ -1,15 +1,27 @@
 {{>header}}
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
 
-  {{{ contents }}}
+  <section>
+    {{{ contents }}}
+  </section>
 
+  <h4>Último artículo publicado</h4>
+  {{#with articles.[0] }}
+    <article>    
+      <h2>{{ title }}</h2>
+      <time>{{ date }}</time>
+      {{{ contents }}}
+    </article>
+  {{/with}}
+
+  <h4>Artículos anteriores</h4>
   <ul class="recent">
     {{#each articles }}
-      <li>
-        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
-        <div class="date">{{ date }}</div>
-      </li>
+      {{#if @index}}
+        <li>
+          <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+          <div class="date">{{ date }}</div>
+        </li>
+      {{/if}}
     {{/each}}
     </ul>
     
