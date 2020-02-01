@@ -9,10 +9,10 @@
   </article>
   <section id="prevnext">
   {{#if next}}
-    <a href="{{next.path}}">Anterior: {{next.title}}</a>
+    <a class="prev" href="{{next.path}}">Anterior: {{next.title}}</a>
   {{/if}}
   {{#if previous}}
-    <a href="{{previous.path}}">Siguiente: {{previous.title}}</a>
+    <a class="next" href="{{previous.path}}">Siguiente: {{previous.title}}</a>
   {{/if}}
   </section>
   <section id="comments">

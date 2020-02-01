@@ -36,3 +36,19 @@ img.icon {
     height: 1.2em;
     vertical-align: -15%;
 }
+#prevnext {
+    display: flex;
+    align-items: stretch;
+}
+#prevnext a {
+    flex-grow: 1;
+}
+#prevnext a.prev:before {
+    content: "← ";
+}
+#prevnext a.next {
+    text-align: right;
+}
+#prevnext a.next:after {
+    content: " →";
+}
