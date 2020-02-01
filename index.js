@@ -12,7 +12,6 @@ Metalsmith(__dirname)
   .metadata({
     sitename: 'vii @ DIVcompo 2020',
     siteurl: 'https://divcompo2020.now.sh/',
-    title: 'vii @ DIVcompo 2020',
     author: 'vii',
     description: "Haciendo un matamarcianos en un mes",
     generatorname: 'Metalsmith',
