@@ -6,10 +6,11 @@
 
   <h4>Último artículo publicado</h4>
   {{#with articles.[0] }}
-    <article>    
+    <article> 
       <h2>{{ title }}</h2>
       <time>{{ dateFormat date "D MMM YYYY, H:mm" }}</time>
       {{{ contents }}}
+      <div class="see-comments"><a href="{{ path }}#disqus_thread">Ver comentarios</a></div>
     </article>
   {{/with}}
 

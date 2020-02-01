@@ -4,15 +4,19 @@ var layouts = require('metalsmith-layouts');
 var permalinks = require('metalsmith-permalinks');
 var collections = require('metalsmith-collections');
 var handlebars = require('handlebars');
+var assets = require('metalsmith-assets');
 
 handlebars.registerHelper('dateFormat', require('handlebars-dateformat'));
 
 Metalsmith(__dirname)
   .metadata({
+    sitename: 'vii @ DIVcompo 2020',
+    siteurl: 'https://divcompo2020.now.sh/',
     title: 'vii @ DIVcompo 2020',
+    author: 'vii',
     description: "Haciendo un matamarcianos en un mes",
-    generator: 'Metalsmith',
-    url: 'http://www.metalsmith.io/',
+    generatorname: 'Metalsmith',
+    generatorurl: 'http://www.metalsmith.io/',
   })
   .source('./src')
   .destination('./public')
@@ -29,12 +33,17 @@ Metalsmith(__dirname)
     pattern: ':title',
     relative: false,
   }))
+  .use(assets({
+    source: 'static',
+    destination: 'static'
+  }))
   .use(
     layouts({
       engine: 'handlebars',
-      directory: './layouts',
-      default: 'article.html',
-      pattern: ["**/*.html"],
+      directory: 'layouts',
+      //default: 'article.hbs',
+      partialExtension: 'hbs',
+      //pattern: ["**/*.hbs"],
       partials: {
         header: 'partials/header',
         footer: 'partials/footer'

@@ -31,3 +31,8 @@ footer {
     text-align: center;
     border-top: 1px solid #999;
 }
+img.icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -15%;
+}

@@ -1,11 +1,12 @@
 ---
 title: ¡Empezamos!
 date: 2020-02-01T01:03
+layout: article.hbs
 ---
 
 La [DIVcompo](https://divcompo.now.sh) acaba de empezar. Toca arrancar DIV y hacer un juego. :)
 
-![DIV Games Studio](/images/div.png)
+![DIV Games Studio](/static/images/div.png)
 
 Las condiciones de la compo son bastante flexibles: se trata de hacer un matamarcianos, o algo estilo matamarcianos. Lo que viene siendo un arcade _shoot'em up_ de toda la vida.
 
