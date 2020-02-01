@@ -3,6 +3,9 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var permalinks = require('metalsmith-permalinks');
 var collections = require('metalsmith-collections');
+var handlebars = require('handlebars');
+
+handlebars.registerHelper('dateFormat', require('handlebars-dateformat'));
 
 Metalsmith(__dirname)
   .metadata({
@@ -31,7 +34,7 @@ Metalsmith(__dirname)
       engine: 'handlebars',
       directory: './layouts',
       default: 'article.html',
-      pattern: ["*/*/*html","*/*html","*html"],
+      pattern: ["**/*.html"],
       partials: {
         header: 'partials/header',
         footer: 'partials/footer'

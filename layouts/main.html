@@ -8,7 +8,7 @@
   {{#with articles.[0] }}
     <article>    
       <h2>{{ title }}</h2>
-      <time>{{ date }}</time>
+      <time>{{ dateFormat date "D MMM YYYY, H:mm" }}</time>
       {{{ contents }}}
     </article>
   {{/with}}
@@ -18,8 +18,8 @@
     {{#each articles }}
       {{#if @index}}
         <li>
-          <div class="title"><a href="{{ path }}">{{ title }}</a></div>
-          <div class="date">{{ date }}</div>
+          <a class="title" href="{{ path }}">{{ title }}</a> &mdash;
+          <span class="time">{{ dateFormat date "D MMM YYYY, H:mm" }}</span>
         </li>
       {{/if}}
     {{/each}}
