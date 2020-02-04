@@ -13,6 +13,9 @@ h1,h2,h3 {
 h1 {
     text-align: center;
 }
+code, pre {
+    font-family: 'Roboto Mono';
+}
 #desc {
     text-align: center;
     background-color: #BBC;
