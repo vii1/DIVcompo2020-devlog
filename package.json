@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "debug": "^3.1.0",
-    "handlebars": "^4.7.2",
+    "handlebars": "^4.7.7",
     "handlebars-dateformat": "^1.1.1",
     "jstransformer": "^1.0.0",
     "jstransformer-handlebars": "^1.1.0",
